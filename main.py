@@ -5,7 +5,6 @@ if __name__ == "__main__":
     HEIGHT = 500
     BACKGROUND_COLOR = (0,0,0)
     UNITS_COLOR = (255,255,255)
-    player_pos = HEIGHT/2-50
     player_velocity = 0
     ball_x_velocity = random.choice((2,-2))
     ball_y_velocity = random.choice((2,-2))
@@ -20,7 +19,7 @@ if __name__ == "__main__":
     pygame.display.set_caption('Pong Clone')
     
     #Define the units
-    player = pygame.Rect(10,player_pos,15,100) #Player
+    player = pygame.Rect(10,HEIGHT/2-50,15,100) #Player
     computer = pygame.Rect(WIDTH-25,HEIGHT/2-50,15,100) #Computer
     ball = pygame.Rect(WIDTH/2-5,HEIGHT/2-5,32,32) #Ball
 
